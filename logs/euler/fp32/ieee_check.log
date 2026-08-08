@@ -1,0 +1,18 @@
+Info [verificarlo]: loaded backend libinterflop_ieee.so
+Info [interflop-ieee]: load backend with:
+Info [interflop-ieee]: debug = false
+Info [interflop-ieee]: debug-binary = false
+Info [interflop-ieee]: no-backend-name = false
+Info [interflop-ieee]: print-new-line = false
+Info [interflop-ieee]: print-subnormal-normalized = false
+Info [interflop-ieee]: count-op = false
+===== 1D Riemann Test =====
+Test: Sod (id=1)
+Solver: HLLC
+Precision: 32 bit (fp32)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=1
+Right: rho=0.125 u=0 p=0.1
+T_end = 0.25, x0 = 0.5
+Done. Steps: 137
+Saved: results/toro1_hllc_fp32_200.dat

@@ -1,0 +1,20 @@
+Battery start: Tue 14 Jul 12:28:13 BST 2026
+launched fp64 N=128 (pid 1212513)
+launched fp64 N=192 (pid 1212514)
+launched fp64 N=256 (pid 1212515)
+launched fp64 N=384 (pid 1212516)
+launched fp32 N=128 (pid 1212517)
+launched fp32 N=192 (pid 1212518)
+launched fp32 N=256 (pid 1212519)
+launched fp32 N=384 (pid 1212520)
+
+Battery done: Tue 14 Jul 13:04:38 BST 2026   failures: 1
+================ summary ================
+[fp64 N=128] Done. Steps: 1281, final t = 0.5  HLLD->HLL fallbacks = 38 (degenerate=38, nonphysical=0), fraction = 4.491328e-07  
+[fp64 N=192] Done. Steps: 1936, final t = 0.5  HLLD->HLL fallbacks = 140 (degenerate=138, nonphysical=2), fraction = 4.878700e-07  
+[fp64 N=256] Done. Steps: 2595, final t = 0.5  HLLD->HLL fallbacks = 368 (degenerate=361, nonphysical=7), fraction = 5.388618e-07  
+[fp64 N=384] Done. Steps: 3917, final t = 0.5  HLLD->HLL fallbacks = 1489 (degenerate=1465, nonphysical=24), fraction = 6.428197e-07  
+[fp32 N=128] Done. Steps: 1281, final t = 0.5  HLLD->HLL fallbacks = 37 (degenerate=37, nonphysical=0), fraction = 4.373135e-07  
+[fp32 N=192] Done. Steps: 1936, final t = 0.5  HLLD->HLL fallbacks = 152 (degenerate=151, nonphysical=1), fraction = 5.296875e-07  
+[fp32 N=256] DID NOT FINISH    Error: non-physical RK stage at step 2406, cell (210, 23)
+[fp32 N=384] Done. Steps: 3916, final t = 0.5  HLLD->HLL fallbacks = 1477 (degenerate=1458, nonphysical=19), fraction = 6.378020e-07  

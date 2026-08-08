@@ -1,0 +1,7 @@
+===== 1D Riemann Test (region build) =====
+Test: Sod (id=1)
+Solver: HLLC
+Truncated regions: recovery,cfl,recon,hancock
+N = 800, dx = 0.00125
+Done. Steps: 548
+Saved: results/euler/raptor/c_keepFU/toro1_hllc_fp64_800_r-recovery+cfl+recon+hancock.dat

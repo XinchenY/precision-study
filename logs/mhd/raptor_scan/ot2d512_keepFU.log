@@ -1,0 +1,10 @@
+===== 2D OT mixed GLM (region build) =====
+Solver: HLLD, order: muscl
+Truncated regions: recovery,cfl,recon,rhs,glm
+Nx x Ny = 512 x 512, CFL = 0.25, t_end = 0.5, alpha = 0.18
+Done. Steps: 5239, final t = 0.5
+c_h(last) = 2.5544, alpha = 0.18
+divB L1 = 0.0508594, divB Linf = 12.4442, psi Linf = 0.0384962
+HLLD flux evaluations = 5504219136
+HLLD->HLL fallbacks = 374645 (degenerate=374630, nonphysical=15), fraction = 6.806506e-05
+Saved: results/mhd/raptor/ot2d512_keepFU/orszag_tang_glm_muscl_hlld_fp64_N512x512_r-recovery+cfl+recon+rhs+glm.dat

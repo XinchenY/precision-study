@@ -1,0 +1,66 @@
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/compiler/fp64/cpu_Ofast/toro5_hllc_fp64_200.dat
+Grid: 500 x 197
+Domain: x=[0, 0.225], y=[0, 0.089]
+T_end = 0.0011741s
+
+===== Shock-Bubble Problem =====
+Pre-shock:  rho=1.29, p=101325
+Post-shock: rho=1.77551, p=159060, u=110.627
+================================
+Step 100: t = 3.82348e-05
+Step 200: t = 7.31737e-05
+Step 300: t = 0.00010789
+Step 400: t = 0.000142482
+Step 500: t = 0.000176663
+Step 600: t = 0.000210687
+Step 700: t = 0.00024462
+Step 800: t = 0.000278552
+Step 900: t = 0.000312537
+Step 1000: t = 0.000346604
+Step 1100: t = 0.000380773
+Step 1200: t = 0.000415079
+Step 1300: t = 0.000449712
+Step 1400: t = 0.000485153
+Step 1500: t = 0.000521335
+Step 1600: t = 0.000557163
+Step 1700: t = 0.000592154
+Step 1800: t = 0.000626229
+Step 1900: t = 0.000659708
+Step 2000: t = 0.000692923
+Step 2100: t = 0.000726026
+Step 2200: t = 0.000759001
+Step 2300: t = 0.000791745
+Step 2400: t = 0.000824218
+Step 2500: t = 0.000856446
+Step 2600: t = 0.000888522
+Step 2700: t = 0.00092058
+Step 2800: t = 0.000952698
+Step 2900: t = 0.000984932
+Step 3000: t = 0.00101742
+Step 3100: t = 0.00105034
+Step 3200: t = 0.001084
+Step 3300: t = 0.00111862
+Step 3400: t = 0.00115361
+
+Done. Steps: 3459
+Results saved to 'results/compiler/fp64/cpu_Ofast/cpu_shock_bubble.dat'
+===== 2D Riemann Problem =====
+Config: cfg12_2S2C (id=12)
+Precision: 64 bit (fp64)
+Solver: hllc
+Grid: 400 x 400, dx=0.0025
+T_end = 0.25
+==============================
+Step 200: t = 0.177088
+
+Done. Steps: 290
+Saved: results/compiler/fp64/cpu_Ofast/riemann2d_cfg12_2S2C_hllc_400.dat

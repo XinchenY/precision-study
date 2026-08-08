@@ -1,0 +1,70 @@
+== gpu-watch2 start 2026-07-23T00:45:21+01:00 pid 3522566
+2026-07-23T01:35:21+01:00 heartbeat load 35
+2026-07-23T02:35:21+01:00 heartbeat load 38
+2026-07-23T03:35:21+01:00 heartbeat load 35
+2026-07-23T04:35:22+01:00 heartbeat load 35
+2026-07-23T05:35:22+01:00 heartbeat load 35
+2026-07-23T06:35:22+01:00 heartbeat load 35
+2026-07-23T07:35:22+01:00 heartbeat load 34
+2026-07-23T08:35:22+01:00 heartbeat load 34
+2026-07-23T09:35:22+01:00 heartbeat load 34
+2026-07-23T10:35:22+01:00 heartbeat load 34
+2026-07-23T11:35:22+01:00 heartbeat load 98
+2026-07-23T12:35:22+01:00 heartbeat load 161
+2026-07-23T13:35:22+01:00 heartbeat load 102
+2026-07-23T14:35:22+01:00 heartbeat load 33
+2026-07-23T15:35:22+01:00 heartbeat load 36
+2026-07-23T16:35:22+01:00 heartbeat load 34
+2026-07-23T17:35:22+01:00 heartbeat load 40
+2026-07-23T18:35:22+01:00 heartbeat load 36
+2026-07-23T19:35:22+01:00 heartbeat load 35
+2026-07-23T20:35:22+01:00 heartbeat load 34
+2026-07-23T21:35:23+01:00 heartbeat load 34
+2026-07-23T22:35:23+01:00 heartbeat load 32
+2026-07-23T23:35:23+01:00 heartbeat load 33
+2026-07-24T00:35:23+01:00 heartbeat load 32
+2026-07-24T01:35:23+01:00 heartbeat load 33
+2026-07-24T02:35:23+01:00 heartbeat load 33
+2026-07-24T03:35:23+01:00 heartbeat load 235
+2026-07-24T04:35:23+01:00 heartbeat load 231
+2026-07-24T05:35:23+01:00 heartbeat load 222
+2026-07-24T06:35:23+01:00 heartbeat load 230
+2026-07-24T07:35:23+01:00 heartbeat load 232
+2026-07-24T08:35:24+01:00 heartbeat load 229
+2026-07-24T09:35:24+01:00 heartbeat load 240
+2026-07-24T10:35:24+01:00 heartbeat load 238
+2026-07-24T11:35:24+01:00 heartbeat load 238
+2026-07-24T12:35:24+01:00 heartbeat load 233
+2026-07-24T13:35:24+01:00 heartbeat load 240
+2026-07-24T14:35:24+01:00 heartbeat load 237
+2026-07-24T15:35:24+01:00 heartbeat load 240
+2026-07-24T16:35:25+01:00 heartbeat load 230
+2026-07-24T17:35:25+01:00 heartbeat load 229
+2026-07-24T18:35:25+01:00 heartbeat load 225
+2026-07-24T19:35:25+01:00 heartbeat load 223
+2026-07-24T20:35:25+01:00 heartbeat load 32
+2026-07-24T21:35:25+01:00 heartbeat load 33
+2026-07-24T22:35:25+01:00 heartbeat load 33
+2026-07-24T23:35:25+01:00 heartbeat load 33
+2026-07-25T00:35:25+01:00 heartbeat load 65
+2026-07-25T01:35:25+01:00 heartbeat load 65
+2026-07-25T02:35:25+01:00 heartbeat load 66
+2026-07-25T03:35:26+01:00 heartbeat load 34
+2026-07-25T04:35:26+01:00 heartbeat load 33
+2026-07-25T05:35:26+01:00 heartbeat load 33
+2026-07-25T06:35:26+01:00 heartbeat load 33
+2026-07-25T07:35:26+01:00 heartbeat load 33
+2026-07-25T08:15:26+01:00 quiet (load 1), firing GPU battery
+GPU battery complete
+2026-07-25T08:37:35+01:00 battery done
+== gpu-watch2 start 2026-07-26T13:22:35+01:00 pid 16630
+== gpu-watch2 start 2026-07-26T13:39:54+01:00 pid 24960
+GPU1-BATTERY-DONE 2026-07-26T14:07:56+01:00
+2026-07-26T14:29:54+01:00 heartbeat load 33
+2026-07-26T15:29:55+01:00 heartbeat load 34
+2026-07-26T16:29:55+01:00 heartbeat load 65
+2026-07-26T17:29:55+01:00 heartbeat load 65
+2026-07-26T18:29:55+01:00 heartbeat load 64
+2026-07-26T19:29:55+01:00 heartbeat load 65
+2026-07-26T20:29:55+01:00 heartbeat load 66
+2026-07-26T21:29:55+01:00 heartbeat load 66

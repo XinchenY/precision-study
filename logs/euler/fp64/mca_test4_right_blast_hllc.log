@@ -1,0 +1,660 @@
+Running test4_right_blast hllc sample 01
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 02
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 03
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 04
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 05
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 06
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 149
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 07
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 08
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 09
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 10
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 11
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 12
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 13
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 14
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 15
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 150
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 16
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 17
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 18
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 19
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 20
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 21
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 22
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 23
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 24
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 25
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 26
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 27
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 28
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 149
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 29
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat
+Running test4_right_blast hllc sample 30
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/toro4_hllc_fp64_200.dat

@@ -1,0 +1,3 @@
+#!/bin/bash
+P=/lsc/opt/raptor
+exec /lsc/opt/llvm-20.1/bin/clang++ -I"$P/include/" -fpass-plugin="$P/lib/LLVMRaptor-20.so" -L"$P/lib" -lstdc++ -lmpfr -lRaptor-RT-20 -fuse-ld=lld -Wl,--load-pass-plugin="$P/lib/LLDRaptor-20.so" "$@"

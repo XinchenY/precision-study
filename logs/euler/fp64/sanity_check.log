@@ -1,0 +1,208 @@
+  x-grid: OK (identical)
+Comparing: /tmp/gpp_ref.dat
+      vs : /tmp/vfc_ieee.dat
+  N points: 200
+  var              L1              L2              L∞
+-------------------------------------------------------
+  rho    0.000000e+00    0.000000e+00    0.000000e+00
+    u    0.000000e+00    0.000000e+00    0.000000e+00
+    p    0.000000e+00    0.000000e+00    0.000000e+00
+============================================================
+ Sanity Check — Mon 27 Apr 14:59:59 BST 2026
+ Host: athena  CPU: Intel(R) Xeon(R) CPU E5-2430 v2 @ 2.50GHz
+============================================================
+
+--- Step 1: Dependencies ---
+  [PASS] g++ found: /usr/bin/g++
+  [PASS] python3 found: /usr/bin/python3
+  [PASS] verificarlo-c++ found: verificarlo-c++
+
+--- Step 2: Compilation ---
+  [PASS] g++ compiled → bin/riemann1d
+  [PASS] verificarlo-c++ compiled → bin/riemann1d_vfc
+
+--- Step 3: Run check (g++, Test 1 HLLC) ---
+===== 1D Riemann Test =====
+Test: Sod (id=1)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=1
+Right: rho=0.125 u=0 p=0.1
+T_end = 0.25, x0 = 0.5
+Done. Steps: 137
+Saved: results/toro1_hllc_fp64_200.dat
+  [PASS] g++ binary ran successfully
+
+--- Step 4: IEEE backend verification ---
+Info [verificarlo]: loaded backend libinterflop_ieee.so
+Info [interflop-ieee]: load backend with:
+Info [interflop-ieee]: debug = false
+Info [interflop-ieee]: debug-binary = false
+Info [interflop-ieee]: no-backend-name = false
+Info [interflop-ieee]: print-new-line = false
+Info [interflop-ieee]: print-subnormal-normalized = false
+Info [interflop-ieee]: count-op = false
+===== 1D Riemann Test =====
+Test: Sod (id=1)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=1
+Right: rho=0.125 u=0 p=0.1
+T_end = 0.25, x0 = 0.5
+Done. Steps: 137
+Saved: results/toro1_hllc_fp64_200.dat
+  x-grid: OK (identical)
+Comparing: /tmp/_sc_gpp_ref.dat
+      vs : /tmp/_sc_vfc_ieee.dat
+  N points: 200
+  var              L1              L2              L∞
+-------------------------------------------------------
+  rho    0.000000e+00    0.000000e+00    0.000000e+00
+    u    0.000000e+00    0.000000e+00    0.000000e+00
+    p    0.000000e+00    0.000000e+00    0.000000e+00
+  L∞(rho) = 0.000e+00 ≤ 1e-12 → PASS
+  [PASS] IEEE backend L∞ within threshold (1e-12)
+
+============================================================
+ Results: 7 PASSED, 0 FAILED
+ Status: ALL CHECKS PASSED — safe to proceed with MCA
+ Log saved: logs/sanity_check.log
+============================================================
+============================================================
+ Sanity Check [fp64] — Sat  4 Jul 16:22:27 BST 2026
+ Host: athena
+ CPU:  Intel(R) Xeon(R) CPU E5-2430 v2 @ 2.50GHz
+============================================================
+
+--- Step 1: Dependencies ---
+  [PASS] g++: /usr/bin/g++
+  [PASS] python3: /usr/bin/python3
+  [PASS] verificarlo-c++: verificarlo-c++
+
+--- Step 2: Compilation [fp64] ---
+src/euler/riemann1d_cpu.cpp: In function ‘int main(int, char**)’:
+src/euler/riemann1d_cpu.cpp:250:14: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  250 |   std::system(("mkdir -p " + out_dir).c_str());
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  [PASS] g++ → bin/riemann1d
+  [PASS] verificarlo → bin/riemann1d_vfc
+
+--- Step 3: Run check (g++, Test 1 HLLC) ---
+===== 1D Riemann Test =====
+Test: Sod (id=1)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=1
+Right: rho=0.125 u=0 p=0.1
+T_end = 0.25, x0 = 0.5
+Done. Steps: 137
+Saved: results/euler/toro1_hllc_fp64_200.dat
+  [PASS] g++ binary ran successfully
+
+--- Step 4: IEEE backend verification ---
+Info [verificarlo]: loaded backend libinterflop_ieee.so
+Info [interflop-ieee]: load backend with:
+Info [interflop-ieee]: debug = false
+Info [interflop-ieee]: debug-binary = false
+Info [interflop-ieee]: no-backend-name = false
+Info [interflop-ieee]: print-new-line = false
+Info [interflop-ieee]: print-subnormal-normalized = false
+Info [interflop-ieee]: count-op = false
+===== 1D Riemann Test =====
+Test: Sod (id=1)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=1
+Right: rho=0.125 u=0 p=0.1
+T_end = 0.25, x0 = 0.5
+Done. Steps: 137
+Saved: results/euler/toro1_hllc_fp64_200.dat
+  x-grid: OK (identical)
+Comparing: /tmp/_sc_ref.dat
+      vs : /tmp/_sc_vfc_ieee.dat
+  N points: 200
+  var              L1              L2              L∞
+-------------------------------------------------------
+  rho    0.000000e+00    0.000000e+00    0.000000e+00
+    u    0.000000e+00    0.000000e+00    0.000000e+00
+    p    0.000000e+00    0.000000e+00    0.000000e+00
+  L∞(rho) = 0.000e+00  ≤  1e-12  →  PASS
+  [PASS] IEEE backend L∞ within threshold (1e-12)
+
+============================================================
+ [fp64]  7 PASSED, 0 FAILED
+ Status: ALL CHECKS PASSED — safe to proceed with MCA
+ Log: logs/fp64/sanity_check.log
+============================================================
+============================================================
+ Sanity Check [fp64] — Sat  4 Jul 17:27:45 BST 2026
+ Host: athena
+ CPU:  Intel(R) Xeon(R) CPU E5-2430 v2 @ 2.50GHz
+============================================================
+
+--- Step 1: Dependencies ---
+  [PASS] g++: /usr/bin/g++
+  [PASS] python3: /usr/bin/python3
+  [PASS] verificarlo-c++: verificarlo-c++
+
+--- Step 2: Compilation [fp64] ---
+src/euler/riemann1d_cpu.cpp: In function ‘int main(int, char**)’:
+src/euler/riemann1d_cpu.cpp:250:14: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  250 |   std::system(("mkdir -p " + out_dir).c_str());
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  [PASS] g++ → bin/riemann1d
+  [PASS] verificarlo → bin/riemann1d_vfc
+
+--- Step 3: Run check (g++, Test 1 HLLC) ---
+===== 1D Riemann Test =====
+Test: Sod (id=1)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=1
+Right: rho=0.125 u=0 p=0.1
+T_end = 0.25, x0 = 0.5
+Done. Steps: 137
+Saved: results/euler/toro1_hllc_fp64_200.dat
+  [PASS] g++ binary ran successfully
+
+--- Step 4: IEEE backend verification ---
+Info [verificarlo]: loaded backend libinterflop_ieee.so
+Info [interflop-ieee]: load backend with:
+Info [interflop-ieee]: debug = false
+Info [interflop-ieee]: debug-binary = false
+Info [interflop-ieee]: no-backend-name = false
+Info [interflop-ieee]: print-new-line = false
+Info [interflop-ieee]: print-subnormal-normalized = false
+Info [interflop-ieee]: count-op = false
+===== 1D Riemann Test =====
+Test: Sod (id=1)
+Solver: HLLC
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=1
+Right: rho=0.125 u=0 p=0.1
+T_end = 0.25, x0 = 0.5
+Done. Steps: 137
+Saved: results/euler/toro1_hllc_fp64_200.dat
+  x-grid: OK (identical)
+Comparing: /tmp/_sc_ref.dat
+      vs : /tmp/_sc_vfc_ieee.dat
+  N points: 200
+  var              L1              L2              L∞
+-------------------------------------------------------
+  rho    0.000000e+00    0.000000e+00    0.000000e+00
+    u    0.000000e+00    0.000000e+00    0.000000e+00
+    p    0.000000e+00    0.000000e+00    0.000000e+00
+  L∞(rho) = 0.000e+00  ≤  1e-12  →  PASS
+  [PASS] IEEE backend L∞ within threshold (1e-12)
+
+============================================================
+ [fp64]  7 PASSED, 0 FAILED
+ Status: ALL CHECKS PASSED — safe to proceed with MCA
+ Log: logs/euler/fp64/sanity_check.log
+============================================================

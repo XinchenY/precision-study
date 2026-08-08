@@ -1,0 +1,13 @@
+===== 2D ideal MHD Orszag-Tang vortex with mixed GLM =====
+Solver: HLLD
+Reconstruction/time: MUSCL + SSPRK2
+Precision: 32 bit (fp32)
+gamma = 1.66667, alpha = 0.18
+Nx x Ny = 384 x 384, CFL = 0.25, t_end = 0.5
+Done. Steps: 3916, final t = 0.5
+c_h(last) = 2.54399, alpha = 0.18
+divB L1 = 0.0553735, divB Linf = 10.531, psi Linf = 0.041939
+HLLD flux evaluations = 2315765760 (x=1157882880, y=1157882880)
+HLLD relative fallback tolerance = 1.000000e-06
+HLLD->HLL fallbacks = 1477 (degenerate=1458, nonphysical=19), fraction = 6.378020e-07
+Saved: staging/ot_final_20260714/orszag_tang_glm_muscl_hlld_fp32_N384x384.dat

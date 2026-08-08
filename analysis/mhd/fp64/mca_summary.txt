@@ -1,0 +1,26 @@
+MCA Brio-Wu (N=800, t=0.1, CFL=0.4, mode=mca, primary n=30)
+Precision: fp64  |  significant decimal digits (SD_MAX ≈ 15.95, values above SD_MAX truncated)
+Verificarlo 2.4.0; 30 independent runs; sigma = sample std (ddof=1)
+
+Common mask (deterministic FP64-HLLD reference, |q_ref| >= 1e-2 max|q_ref|):
+  rho: retained 800/800 = 100.0%
+  vx : retained 448/800 = 56.0%
+  vy : retained 432/800 = 54.0%
+  p  : retained 800/800 = 100.0%
+  By : retained 800/800 = 100.0%
+  E  : retained 800/800 = 100.0%
+
+Solver  var    n   mean_sd  p05_sd median_sd  min_sd   x_min  #cap
+------------------------------------------------------------------
+  hlld  rho   30     14.54   13.75     14.78   13.39   0.644     0
+  hlld   vx   30     14.24   13.37     14.36   11.59   0.646     0
+  hlld   vy   30     14.15   13.27     14.18   12.64   0.867     0
+  hlld    p   30     14.59   13.72     14.74   12.96   0.646     0
+  hlld   By   30     14.97   14.60     14.95   12.78   0.469     0
+  hlld    E   30     15.04   14.60     15.03   13.42   0.644     0
+   hll  rho   30     15.06   14.39     14.97   13.56   0.647   188
+   hll   vx   30     14.34   13.34     14.39   11.73   0.647     0
+   hll   vy   30     14.32   13.49     14.34   12.58   0.867     0
+   hll    p   30     14.90   14.14     14.84   13.12   0.647    29
+   hll   By   30     15.29   14.77     15.19   12.65   0.469   197
+   hll    E   30     15.29   14.82     15.14   13.63   0.646   168

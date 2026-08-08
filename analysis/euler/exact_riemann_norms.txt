@@ -1,0 +1,15 @@
+Density errors vs exact Riemann solution  (N=200 IEEE, Lovelace)
+  L1 = mean|err|,  L2 = RMS,  L∞ = max|err|
+
+Test                 Solver   Prec            L1            L2            L∞
+------------------------------------------------------------------------------
+  1 (Sod)                hllc   fp64     3.565e-03     9.728e-03     6.773e-02
+                                fp32     3.565e-03     9.728e-03     6.773e-02
+  2 (123 problem)        hllc   fp64     3.243e-03     7.009e-03     4.206e-02
+                                fp32     3.243e-03     7.009e-03     4.206e-02
+  3 (left blast)         hllc   fp64     9.567e-02     4.421e-01     4.016e+00
+                                fp32     9.567e-02     4.421e-01     4.016e+00
+  4 (right blast)        hllc   fp64     8.916e-02     4.116e-01     3.327e+00
+                                fp32     8.916e-02     4.116e-01     3.327e+00
+  5 (two shocks)         hllc   fp64     2.861e-01     1.154e+00     7.994e+00
+                                fp32     2.861e-01     1.154e+00     7.994e+00

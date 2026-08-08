@@ -1,0 +1,12 @@
+===== 1D ideal MHD Brio-Wu shock tube (region build) =====
+Solver: HLLD
+Reconstruction: MUSCL-Hancock
+Precision: 64 bit (fp64)
+Truncated regions: recovery
+gamma = 2
+N = 800, dx = 0.00125, CFL = 0.4
+Done. Steps: 760, final t = 0.1
+HLLD flux evaluations = 608760
+HLLD relative fallback tolerance = 1.000000e-04
+HLLD->HLL fallbacks = 0 (degenerate=0, nonphysical=0), fraction = 0.000000e+00
+Saved: results/mhd/raptor/r_recovery/brio_wu_muscl_hlld_fp64_N800_r-recovery.dat

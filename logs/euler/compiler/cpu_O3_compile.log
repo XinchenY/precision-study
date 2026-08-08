@@ -1,0 +1,12 @@
+src/riemann1d_cpu.cpp: In function ‘int main(int, char**)’:
+src/riemann1d_cpu.cpp:250:14: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  250 |   std::system(("mkdir -p " + out_dir).c_str());
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/euler2d_cpu.cpp: In function ‘int main()’:
+src/euler2d_cpu.cpp:399:14: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  399 |   std::system(("mkdir -p " + out_dir).c_str());
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/riemann2d_cpu.cpp: In function ‘int main(int, char**)’:
+src/riemann2d_cpu.cpp:353:14: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  353 |   std::system(("mkdir -p " + out_dir).c_str());
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

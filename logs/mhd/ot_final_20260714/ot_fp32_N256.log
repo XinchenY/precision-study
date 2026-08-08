@@ -1,0 +1,15 @@
+===== 2D ideal MHD Orszag-Tang vortex with mixed GLM =====
+Solver: HLLD
+Reconstruction/time: MUSCL + SSPRK2
+Precision: 32 bit (fp32)
+gamma = 1.66667, alpha = 0.18
+Nx x Ny = 256 x 256, CFL = 0.25, t_end = 0.5
+Error: non-physical RK stage at step 2406, cell (210, 23)
+Failure diagnostics (RK stage)
+  step=2406 t=0.464775771 dt=0.000180351184 ch=2.7073915
+  cell=(210, 23) x=0.822265625 y=0.091796875
+  rho_raw=0.129352197 rho_prim=0.129352197 p=-0.0301927701 p_prim=-0.0301927701
+  vx=-0.67855829 vy=-0.884381235 vz=0
+  Bx=-0.0988147482 By=-0.340553999 Bz=0 psi=0.00583015755
+  E=0.0979462117 kinetic=0.0803646818 magnetic=0.0628706887 internal=-0.0452891588
+  divB=0.0502929688

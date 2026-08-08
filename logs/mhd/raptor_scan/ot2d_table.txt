@@ -1,0 +1,11 @@
+config          max relL2  (var)     max Linf
+native_fp32      1.07e-05     vy     5.15e-04
+recovery         4.79e-07    rho     6.28e-06
+cfl              4.74e-07    rho     6.27e-06
+recon            1.03e-07     vy     8.58e-07
+flux             4.84e-07    rho     6.29e-06
+rhs              7.20e-08     vx     4.88e-07
+glm              4.94e-11     vy     1.83e-10
+update           8.20e-07    rho     5.98e-06
+all7             9.94e-06     vy     5.15e-04
+keepFU           8.24e-08     vx     5.19e-07

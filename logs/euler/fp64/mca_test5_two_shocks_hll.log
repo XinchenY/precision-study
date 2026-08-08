@@ -1,0 +1,660 @@
+Running test5_two_shocks hll sample 01
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 02
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 03
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 04
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 05
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 06
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 07
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 264
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 08
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 09
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 10
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 11
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 12
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 264
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 13
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 14
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 15
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 16
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 17
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 18
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 19
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 20
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 21
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 22
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 23
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 24
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 264
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 25
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 265
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 26
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 27
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 28
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 29
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat
+Running test5_two_shocks hll sample 30
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLL
+Precision: 64 bit (fp64)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/toro5_hll_fp64_200.dat

@@ -1,0 +1,4 @@
+# A30 (sm_80, CUDA 12.9, -O2 no fast-math, eps=1e-4) 参考校验和
+# grep -v '^#' <dat> | md5sum   — OT 192x192, 1936 steps
+fp64  d54b0169c654fc3e94285b34dd43624c  fallbacks=13372
+fp32  2c0ab4505d744ce4248bb9c54520e812  fallbacks=13355

@@ -1,0 +1,217 @@
+===== 1D Riemann Test =====
+Test: Sod (id=1)
+Solver: HLLC
+Precision: 32 bit (fp32)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=1
+Right: rho=0.125 u=0 p=0.1
+T_end = 0.25, x0 = 0.5
+Done. Steps: 137
+Saved: results/ieee/fp32/toro1_hllc_fp32_200.dat
+===== 1D Riemann Test =====
+Test: 123_problem (id=2)
+Solver: HLLC
+Precision: 32 bit (fp32)
+N = 200, dx = 0.005
+Left:  rho=1 u=-2 p=0.4
+Right: rho=1 u=2 p=0.4
+T_end = 0.15, x0 = 0.5
+Done. Steps: 104
+Saved: results/ieee/fp32/toro2_hllc_fp32_200.dat
+===== 1D Riemann Test =====
+Test: Left_blast (id=3)
+Solver: HLLC
+Precision: 32 bit (fp32)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=1000
+Right: rho=1 u=0 p=0.01
+T_end = 0.012, x0 = 0.5
+Done. Steps: 160
+Saved: results/ieee/fp32/toro3_hllc_fp32_200.dat
+===== 1D Riemann Test =====
+Test: Right_blast (id=4)
+Solver: HLLC
+Precision: 32 bit (fp32)
+N = 200, dx = 0.005
+Left:  rho=1 u=0 p=0.01
+Right: rho=1 u=0 p=100
+T_end = 0.035, x0 = 0.5
+Done. Steps: 148
+Saved: results/ieee/fp32/toro4_hllc_fp32_200.dat
+===== 1D Riemann Test =====
+Test: Two_shocks (id=5)
+Solver: HLLC
+Precision: 32 bit (fp32)
+N = 200, dx = 0.005
+Left:  rho=5.99924 u=19.5975 p=460.894
+Right: rho=5.99242 u=-6.19633 p=46.095
+T_end = 0.035, x0 = 0.4
+Done. Steps: 263
+Saved: results/ieee/fp32/toro5_hllc_fp32_200.dat
+===== 1D Riemann GPU =====
+Test:      Sod  (id=1)
+Solver:    HLLC
+Precision: fp32
+N=200  dx=0.005
+Done. Steps: 137
+Saved: results/gpu/fp32/toro1_hllc_fp32_200.dat
+===== 1D Riemann GPU =====
+Test:      123_problem  (id=2)
+Solver:    HLLC
+Precision: fp32
+N=200  dx=0.005
+Done. Steps: 104
+Saved: results/gpu/fp32/toro2_hllc_fp32_200.dat
+===== 1D Riemann GPU =====
+Test:      Left_blast  (id=3)
+Solver:    HLLC
+Precision: fp32
+N=200  dx=0.005
+Done. Steps: 160
+Saved: results/gpu/fp32/toro3_hllc_fp32_200.dat
+===== 1D Riemann GPU =====
+Test:      Right_blast  (id=4)
+Solver:    HLLC
+Precision: fp32
+N=200  dx=0.005
+Done. Steps: 148
+Saved: results/gpu/fp32/toro4_hllc_fp32_200.dat
+===== 1D Riemann GPU =====
+Test:      Two_shocks  (id=5)
+Solver:    HLLC
+Precision: fp32
+N=200  dx=0.005
+Done. Steps: 263
+Saved: results/gpu/fp32/toro5_hllc_fp32_200.dat
+Grid: 500 x 197
+Domain: x=[0, 0.225], y=[0, 0.089]
+T_end = 0.0011741s
+
+===== Shock-Bubble Problem =====
+Pre-shock:  rho=1.29, p=101325
+Post-shock: rho=1.77551, p=159060, u=110.627
+================================
+Step 100: t = 3.82348e-05
+Step 200: t = 7.31737e-05
+Step 300: t = 0.00010789
+Step 400: t = 0.000142482
+Step 500: t = 0.000176663
+Step 600: t = 0.000210687
+Step 700: t = 0.00024462
+Step 800: t = 0.000278552
+Step 900: t = 0.000312537
+Step 1000: t = 0.000346604
+Step 1100: t = 0.000380773
+Step 1200: t = 0.000415079
+Step 1300: t = 0.000449712
+Step 1400: t = 0.000485153
+Step 1500: t = 0.000521335
+Step 1600: t = 0.000557163
+Step 1700: t = 0.000592154
+Step 1800: t = 0.000626229
+Step 1900: t = 0.000659708
+Step 2000: t = 0.000692923
+Step 2100: t = 0.000726025
+Step 2200: t = 0.000759001
+Step 2300: t = 0.000791745
+Step 2400: t = 0.000824218
+Step 2500: t = 0.000856446
+Step 2600: t = 0.000888521
+Step 2700: t = 0.000920579
+Step 2800: t = 0.000952698
+Step 2900: t = 0.000984931
+Step 3000: t = 0.00101742
+Step 3100: t = 0.00105034
+Step 3200: t = 0.001084
+Step 3300: t = 0.00111862
+Step 3400: t = 0.00115361
+
+Done. Steps: 3459
+Results saved to 'results/2d/fp32/cpu_shock_bubble.dat'
+===== 2D Riemann Problem =====
+Config: cfg6_4contacts (id=6)
+Precision: 32 bit (fp32)
+Solver: hllc
+Grid: 400 x 400, dx=0.0025
+T_end = 0.3
+==============================
+Step 200: t = 0.204515
+
+Done. Steps: 294
+Saved: results/2d/fp32/riemann2d_cfg6_4contacts_hllc_400.dat
+===== 2D Riemann Problem =====
+Config: cfg12_2S2C (id=12)
+Precision: 32 bit (fp32)
+Solver: hllc
+Grid: 400 x 400, dx=0.0025
+T_end = 0.25
+==============================
+Step 200: t = 0.177088
+
+Done. Steps: 290
+Saved: results/2d/fp32/riemann2d_cfg12_2S2C_hllc_400.dat
+Grid: 500 x 197 (with 2 ghost -> 504 x 201)
+Domain: x=[0.000, 0.225], y=[0.000, 0.089]
+T_end = 0.0011741 s
+
+===== Shock-Bubble Problem (CUDA) =====
+Pre-shock:  rho=1.2900, p=101325.0
+Post-shock: rho=1.7755, p=159060.0, u=110.6273
+=======================================
+Starting CUDA simulation...
+Step 100: t = 3.823483e-05
+Step 200: t = 7.317365e-05
+Step 300: t = 1.078903e-04
+Step 400: t = 1.424824e-04
+Step 500: t = 1.766633e-04
+Step 600: t = 2.106871e-04
+Step 700: t = 2.446202e-04
+Step 800: t = 2.785520e-04
+Step 900: t = 3.125371e-04
+Step 1000: t = 3.466039e-04
+Step 1100: t = 3.807732e-04
+Step 1200: t = 4.150787e-04
+Step 1300: t = 4.497121e-04
+Step 1400: t = 4.851526e-04
+Step 1500: t = 5.213345e-04
+Step 1600: t = 5.571633e-04
+Step 1700: t = 5.921535e-04
+Step 1800: t = 6.262287e-04
+Step 1900: t = 6.597076e-04
+Step 2000: t = 6.929226e-04
+Step 2100: t = 7.260253e-04
+Step 2200: t = 7.590009e-04
+Step 2300: t = 7.917446e-04
+Step 2400: t = 8.242175e-04
+Step 2500: t = 8.564463e-04
+Step 2600: t = 8.885212e-04
+Step 2700: t = 9.205793e-04
+Step 2800: t = 9.526979e-04
+Step 2900: t = 9.849310e-04
+Step 3000: t = 1.017423e-03
+Step 3100: t = 1.050344e-03
+Step 3200: t = 1.084004e-03
+Step 3300: t = 1.118619e-03
+Step 3400: t = 1.153608e-03
+
+Done. Steps: 3459
+Execution Time: 617.92 ms (0.6179 s)
+Saved results/2d/fp32/gpu_shock_bubble.dat (t=1.174100e-03)
+===== 2D Riemann GPU =====
+Config:    cfg6_4contacts  (id=6)
+Solver:    HLLC
+Precision: fp32
+Grid:      400 x 400  dx=0.0025
+T_end:     0.3
+Step 200: t = 0.204515
+Done. Steps: 294   Wall: 0.0567124 s
+Saved: results/2d/fp32/gpu/riemann2d_cfg6_4contacts_hllc_400.dat
+===== 2D Riemann GPU =====
+Config:    cfg12_2S2C  (id=12)
+Solver:    HLLC
+Precision: fp32
+Grid:      400 x 400  dx=0.0025
+T_end:     0.25
+Step 200: t = 0.177088
+Done. Steps: 290   Wall: 0.0626384 s
+Saved: results/2d/fp32/gpu/riemann2d_cfg12_2S2C_hllc_400.dat

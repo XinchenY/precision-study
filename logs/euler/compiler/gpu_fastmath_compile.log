@@ -1,0 +1,48 @@
+src/riemann1d_gpu.cu(302): warning #1650-D: result of call is not used
+    system(("mkdir -p " + dir).c_str());
+    ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+src/riemann1d_gpu.cu(302): warning #1650-D: result of call is not used
+    system(("mkdir -p " + dir).c_str());
+    ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+src/riemann1d_gpu.cu: In function ‘int main(int, char**)’:
+src/riemann1d_gpu.cu:302:7: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  302 |   system(("mkdir -p " + dir).c_str());
+      |   ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+src/euler2d_cuda.cu(379): warning #1650-D: result of call is not used
+      std::system(("mkdir -p " + out_dir).c_str());
+      ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+src/euler2d_cuda.cu(379): warning #1650-D: result of call is not used
+      std::system(("mkdir -p " + out_dir).c_str());
+      ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+src/euler2d_cuda.cu: In function ‘int main()’:
+src/euler2d_cuda.cu:379:12: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  379 |     std::system(("mkdir -p " + out_dir).c_str());
+      |     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/riemann2d_gpu.cu(458): warning #1650-D: result of call is not used
+    std::system(("mkdir -p " + out_dir).c_str());
+    ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+src/riemann2d_gpu.cu(458): warning #1650-D: result of call is not used
+    std::system(("mkdir -p " + out_dir).c_str());
+    ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+src/riemann2d_gpu.cu: In function ‘int main(int, char**)’:
+src/riemann2d_gpu.cu:458:12: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  458 |   std::system(("mkdir -p " + out_dir).c_str());
+      |   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 

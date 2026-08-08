@@ -1,0 +1,24 @@
+Info [verificarlo]: loaded backend libinterflop_vprec.so
+Info [interflop-vprec]: load backend with: 
+Info [interflop-vprec]: precision-binary32 = 23
+Info [interflop-vprec]: range-binary32 = 8
+Info [interflop-vprec]: precision-binary64 = 21
+Info [interflop-vprec]: range-binary64 = 11
+Info [interflop-vprec]: mode = ob
+Info [interflop-vprec]: error-mode = rel
+Info [interflop-vprec]: max-abs-error-exponent = -1022
+Info [interflop-vprec]: daz = false
+Info [interflop-vprec]: ftz = false
+Info [interflop-vprec]: 	instrument = none
+Info [interflop-vprec]: 	prec-input-file = (null)
+Info [interflop-vprec]: 	prec-output-file = (null)
+Info [interflop-vprec]: 	prec-log-file = (null)
+===== 1D ideal MHD Brio-Wu shock tube =====
+Solver: HLLD
+Reconstruction: MUSCL-Hancock
+Precision: 64 bit (fp64)
+gamma = 2
+N = 800, dx = 0.00125, CFL = 0.4
+T_end = 0.1, x0 = 0.5
+Left:  rho=1 p=1 Bx=0.75 By=1 Bz=0
+Right: rho=0.125 p=0.1 Bx=0.75 By=-1 Bz=0

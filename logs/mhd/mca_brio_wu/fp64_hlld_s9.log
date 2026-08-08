@@ -1,0 +1,25 @@
+Info [verificarlo]: loaded backend libinterflop_mca.so
+Info [interflop-mcaquad]: load backend with:
+Info [interflop-mcaquad]: precision-binary32 = 24
+Info [interflop-mcaquad]: precision-binary64 = 53
+Info [interflop-mcaquad]: mode = mca
+Info [interflop-mcaquad]: error-mode = rel
+Info [interflop-mcaquad]: max-abs-error-exponent = 112
+Info [interflop-mcaquad]: daz = false
+Info [interflop-mcaquad]: ftz = false
+Info [interflop-mcaquad]: sparsity = 1.000000
+Info [interflop-mcaquad]: seed = 0
+===== 1D ideal MHD Brio-Wu shock tube =====
+Solver: HLLD
+Reconstruction: MUSCL-Hancock
+Precision: 64 bit (fp64)
+gamma = 2
+N = 800, dx = 0.00125, CFL = 0.4
+T_end = 0.1, x0 = 0.5
+Left:  rho=1 p=1 Bx=0.75 By=1 Bz=0
+Right: rho=0.125 p=0.1 Bx=0.75 By=-1 Bz=0
+Done. Steps: 760, final t = 0.1
+HLLD flux evaluations = 608760
+HLLD relative fallback tolerance = 1.000000e-06
+HLLD->HLL fallbacks = 0 (degenerate=0, nonphysical=0), fraction = 0.000000e+00
+Saved: results/mhd/mca/brio_wu/fp64/hlld/tmp_XlWH/brio_wu_muscl_hlld_fp64_N800.dat

@@ -1,0 +1,29 @@
+Info [verificarlo]: loaded backend libinterflop_vprec.so
+Info [interflop-vprec]: load backend with: 
+Info [interflop-vprec]: precision-binary32 = 23
+Info [interflop-vprec]: range-binary32 = 8
+Info [interflop-vprec]: precision-binary64 = 52
+Info [interflop-vprec]: range-binary64 = 11
+Info [interflop-vprec]: mode = ob
+Info [interflop-vprec]: error-mode = rel
+Info [interflop-vprec]: max-abs-error-exponent = -1022
+Info [interflop-vprec]: daz = false
+Info [interflop-vprec]: ftz = false
+Info [interflop-vprec]: 	instrument = none
+Info [interflop-vprec]: 	prec-input-file = (null)
+Info [interflop-vprec]: 	prec-output-file = (null)
+Info [interflop-vprec]: 	prec-log-file = (null)
+===== 2D ideal MHD Orszag-Tang vortex with mixed GLM =====
+Solver: HLLD
+Reconstruction/time: MUSCL + SSPRK2
+Precision: 64 bit (fp64)
+gamma = 1.66667, alpha = 0.18
+Nx x Ny = 192 x 192, CFL = 0.25, t_end = 0.5
+Done. Steps: 1936, final t = 0.5
+c_h(last) = 2.51195, alpha = 0.18
+divB L1 = 0.0677084, divB Linf = 6.83257, psi Linf = 0.0521135
+HLLD flux evaluations = 286961664 (x=143480832, y=143480832)
+HLLD relative fallback tolerance = 1.000000e-04
+HLLD->HLL fallbacks = 13372 (degenerate=13370, nonphysical=2), fraction = 4.659856e-05
+Saved: results/mhd/vprec/scan2d/t52/orszag_tang_glm_muscl_hlld_fp64_N192x192.dat
+exit=0 wall=3937s

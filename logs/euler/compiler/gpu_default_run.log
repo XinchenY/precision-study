@@ -1,0 +1,63 @@
+===== 1D Riemann GPU =====
+Test:      Two_shocks  (id=5)
+Solver:    HLLC
+Precision: fp64
+N=200  dx=0.005
+Done. Steps: 263
+Saved: results/compiler/fp64/gpu_default/toro5_hllc_fp64_200.dat
+Grid: 500 x 197 (with 2 ghost -> 504 x 201)
+Domain: x=[0.000, 0.225], y=[0.000, 0.089]
+T_end = 0.0011741 s
+
+===== Shock-Bubble Problem (CUDA) =====
+Pre-shock:  rho=1.2900, p=101325.0
+Post-shock: rho=1.7755, p=159060.0, u=110.6272
+=======================================
+Starting CUDA simulation...
+Step 100: t = 3.823483e-05
+Step 200: t = 7.317365e-05
+Step 300: t = 1.078903e-04
+Step 400: t = 1.424824e-04
+Step 500: t = 1.766633e-04
+Step 600: t = 2.106870e-04
+Step 700: t = 2.446202e-04
+Step 800: t = 2.785519e-04
+Step 900: t = 3.125370e-04
+Step 1000: t = 3.466038e-04
+Step 1100: t = 3.807732e-04
+Step 1200: t = 4.150787e-04
+Step 1300: t = 4.497122e-04
+Step 1400: t = 4.851527e-04
+Step 1500: t = 5.213347e-04
+Step 1600: t = 5.571633e-04
+Step 1700: t = 5.921535e-04
+Step 1800: t = 6.262290e-04
+Step 1900: t = 6.597079e-04
+Step 2000: t = 6.929231e-04
+Step 2100: t = 7.260258e-04
+Step 2200: t = 7.590012e-04
+Step 2300: t = 7.917448e-04
+Step 2400: t = 8.242176e-04
+Step 2500: t = 8.564464e-04
+Step 2600: t = 8.885216e-04
+Step 2700: t = 9.205798e-04
+Step 2800: t = 9.526984e-04
+Step 2900: t = 9.849315e-04
+Step 3000: t = 1.017424e-03
+Step 3100: t = 1.050344e-03
+Step 3200: t = 1.084004e-03
+Step 3300: t = 1.118619e-03
+Step 3400: t = 1.153608e-03
+
+Done. Steps: 3459
+Execution Time: 758.47 ms (0.7585 s)
+Saved results/compiler/fp64/gpu_default/gpu_shock_bubble.dat (t=1.174100e-03)
+===== 2D Riemann GPU =====
+Config:    cfg12_2S2C  (id=12)
+Solver:    HLLC
+Precision: fp64
+Grid:      400 x 400  dx=0.0025
+T_end:     0.25
+Step 200: t = 0.177088
+Done. Steps: 290   Wall: 0.0921656 s
+Saved: results/compiler/fp64/gpu_default/riemann2d_cfg12_2S2C_hllc_400.dat

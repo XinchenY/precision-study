@@ -1,0 +1,7 @@
+===== 2D ideal MHD Orszag-Tang vortex with mixed GLM =====
+Solver: HLLD
+Reconstruction/time: MUSCL + SSPRK2
+Precision: 32 bit (fp32)
+gamma = 1.66667, alpha = 0.18
+Nx x Ny = 256 x 256, CFL = 0.25, t_end = 0.5
+Error: non-physical state at step 2340, cell (46, 234)

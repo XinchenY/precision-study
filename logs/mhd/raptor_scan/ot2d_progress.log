@@ -1,0 +1,15 @@
+== 2D scan start 2026-07-20T16:49:59+01:00
+builds OK 2026-07-20T16:50:12+01:00
+V1 bitwise OK 2026-07-20T16:55:24+01:00
+V3 bitwise OK 2026-07-20T16:57:50+01:00
+native fp32 ref done 2026-07-20T17:00:41+01:00
+region recovery done rc=0 2026-07-20T17:03:04+01:00
+region cfl done rc=0 2026-07-20T17:05:37+01:00
+region recon done rc=0 2026-07-20T17:08:26+01:00
+region flux done rc=0 2026-07-20T17:10:59+01:00
+region rhs done rc=0 2026-07-20T17:13:23+01:00
+region glm done rc=0 2026-07-20T17:15:46+01:00
+region update done rc=0 2026-07-20T17:18:14+01:00
+combo recovery+cfl+recon+flux+rhs+glm+update done rc=0 2026-07-20T17:21:05+01:00
+combo recovery+cfl+recon+rhs+glm done rc=0 2026-07-20T17:23:45+01:00
+== 2D scan complete 2026-07-20T17:23:45+01:00

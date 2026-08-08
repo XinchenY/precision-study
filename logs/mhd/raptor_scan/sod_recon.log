@@ -1,0 +1,7 @@
+===== 1D Riemann Test (region build) =====
+Test: Sod (id=1)
+Solver: HLLC
+Truncated regions: recon
+N = 800, dx = 0.00125
+Done. Steps: 548
+Saved: results/euler/raptor/r_recon/toro1_hllc_fp64_800_r-recon.dat

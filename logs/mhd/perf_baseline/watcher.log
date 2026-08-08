@@ -1,0 +1,30 @@
+== watcher start 2026-07-20T14:47:06+01:00 pid 3066740
+2026-07-25T08:17:14+01:00 quiet window, GPU battery
+GPU battery complete
+2026-07-25T08:39:34+01:00 firing cpu fp64 512 try1 (load 2.25)
+2026-07-25T09:08:47+01:00 firing cpu fp64 512 try2 (load 2.04)
+2026-07-25T09:38:09+01:00 firing cpu fp64 512 try3 (load 2.25)
+2026-07-25T10:07:29+01:00 cpu fp64 512 done: 3/3 accepted
+2026-07-25T10:07:29+01:00 firing cpu fp32 512 try1 (load 2.00)
+2026-07-25T10:33:38+01:00 firing cpu fp32 512 try2 (load 2.08)
+2026-07-25T10:59:46+01:00 firing cpu fp32 512 try3 (load 2.27)
+2026-07-25T11:25:50+01:00 cpu fp32 512 done: 3/3 accepted
+2026-07-25T11:25:50+01:00 firing cpu fp64 256 try1 (load 2.60)
+2026-07-25T11:29:36+01:00 firing cpu fp64 256 try2 (load 2.99)
+2026-07-25T11:33:20+01:00 firing cpu fp64 256 try3 (load 2.68)
+2026-07-25T11:37:04+01:00 firing cpu fp64 256 try4 (load 2.17)
+2026-07-25T11:40:47+01:00 cpu fp64 256 done: 4/4 accepted
+2026-07-25T11:40:47+01:00 firing cpu fp32 256 try1 (load 3.38)
+2026-07-25T11:44:04+01:00 firing cpu fp32 256 try2 (load 2.24)
+2026-07-25T11:47:20+01:00 firing cpu fp32 256 try3 (load 2.08)
+2026-07-25T11:50:36+01:00 firing cpu fp32 256 try4 (load 2.42)
+2026-07-25T11:53:53+01:00 cpu fp32 256 done: 4/4 accepted
+2026-07-25T11:53:53+01:00 firing cpu fp64 384 try1 (load 2.41)
+2026-07-25T12:06:23+01:00 firing cpu fp64 384 try2 (load 2.14)
+2026-07-25T12:18:58+01:00 firing cpu fp64 384 try3 (load 2.14)
+2026-07-25T12:31:35+01:00 cpu fp64 384 done: 3/3 accepted
+2026-07-25T12:31:35+01:00 firing cpu fp32 384 try1 (load 2.27)
+2026-07-25T12:42:39+01:00 firing cpu fp32 384 try2 (load 2.24)
+2026-07-25T12:53:45+01:00 firing cpu fp32 384 try3 (load 2.18)
+2026-07-25T13:04:45+01:00 cpu fp32 384 done: 3/3 accepted
+== watcher complete 2026-07-25T13:04:45+01:00

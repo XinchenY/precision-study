@@ -1,0 +1,32 @@
+MCA Brio-Wu (N=800, t=0.1, CFL=0.4, mode=mca, primary n=30)
+Precision: fp32  |  significant decimal digits (SD_MAX ≈ 7.22, values above SD_MAX truncated)
+Verificarlo 2.4.0; 30 independent runs; sigma = sample std (ddof=1)
+
+Common mask (deterministic FP64-HLLD reference, |q_ref| >= 1e-2 max|q_ref|):
+  rho: retained 800/800 = 100.0%
+  vx : retained 448/800 = 56.0%
+  vy : retained 432/800 = 54.0%
+  p  : retained 800/800 = 100.0%
+  By : retained 800/800 = 100.0%
+  E  : retained 800/800 = 100.0%
+
+Solver  var    n   mean_sd  p05_sd median_sd  min_sd   x_min  #cap
+------------------------------------------------------------------
+  hlld  rho   30      5.80    5.01      6.04    4.58   0.644     0
+  hlld   vx   30      5.49    4.56      5.54    2.77   0.646     0
+  hlld   vy   30      5.43    4.58      5.40    3.95   0.867     0
+  hlld    p   30      5.89    5.11      6.00    4.14   0.646     0
+  hlld   By   30      6.30    5.89      6.26    3.97   0.469     0
+  hlld    E   30      6.34    5.87      6.31    4.60   0.644     0
+    [convergence hlld/rho: n=30 vs n=100]  median|Δsd|=0.036  max|Δsd|=0.192
+    [convergence hlld/vx: n=30 vs n=100]  median|Δsd|=0.036  max|Δsd|=0.172
+    [convergence hlld/vy: n=30 vs n=100]  median|Δsd|=0.039  max|Δsd|=0.142
+    [convergence hlld/p: n=30 vs n=100]  median|Δsd|=0.034  max|Δsd|=0.189
+    [convergence hlld/By: n=30 vs n=100]  median|Δsd|=0.029  max|Δsd|=0.219
+    [convergence hlld/E: n=30 vs n=100]  median|Δsd|=0.032  max|Δsd|=0.175
+   hll  rho   30      6.36    5.66      6.25    4.73   0.647   232
+   hll   vx   30      5.62    4.58      5.56    2.90   0.647     0
+   hll   vy   30      5.61    4.75      5.51    3.98   0.867     0
+   hll    p   30      6.23    5.33      6.08    4.29   0.647   226
+   hll   By   30      6.64    6.05      6.59    3.80   0.469   233
+   hll    E   30      6.62    6.09      6.47    4.80   0.646   231

@@ -1,0 +1,25 @@
+# ── 可重编译产物(编译命令见 docs/REPRODUCING.md)──────────────
+bin/
+*.o
+*.out
+
+# ── 大体量数据(1.5 GB;md5 清单 data/MANIFEST.md5,重生成命令见
+#    docs/REPRODUCING.md;台账 logs/mhd/ch10_runs.csv 全保留)────
+results/
+*.dat
+
+# ── 历史快照/本地杂物 ─────────────────────────────────────────
+archive/
+mhd_hlld_update_mac_20260713/
+a100_kit.tar.gz
+.claude/
+
+# ── Python/编辑器 ────────────────────────────────────────────
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+
+# ── 论文草稿与数据清单不入库(仅代码提交)──────────────────────
+thesis/
+data/
