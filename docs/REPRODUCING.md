@@ -14,8 +14,8 @@ repository).
 
 **中文** — 所有正文数字都能沿「表格 → 台账 → CSV/cmp 文件 → 原始命令」反查。
 中央台账:`logs/mhd/ch10_runs.csv`(每次运行的时间、命令、输出 md5、接受/拒绝原因)。
-`results/` 不入库(1.5 GB):关键 `.dat` 的 md5 清单由 `scripts/make_manifest.sh` 本地生成(不随仓库分发)
-(由 `scripts/make_manifest.sh` 生成),按下述命令重生成后比对 md5 即可验证逐位一致。
+`results/` 不入库(1.5 GB):关键 `.dat` 的 md5 清单由 `scripts/make_manifest.sh`
+本地生成(不随仓库分发),按下述命令重生成数据后比对清单即可验证逐位一致。
 
 ## 1. 编译矩阵
 
