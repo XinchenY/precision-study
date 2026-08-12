@@ -64,9 +64,9 @@ The output directory can be redirected with the OUTDIR environment variable (def
 |---|---|---|
 | Table 9.9(编译器/浮点控制精度) | `logs/mhd/gpu_backend_20260718/cmp_*.txt` | compare_precision.py 对成对 .dat |
 | Table 10.1(512² 计时) | `logs/mhd/perf_baseline/*.csv` | `scripts/run_variants_*.sh`、`run_gpu_baseline_v2.sh` |
-| VPREC 扫描(10.2) | `logs/mhd/vprec_scan{1d,2d}/` | `scripts/run_vprec_scan1d.sh` |
+| VPREC 扫描（Section 10.3; Tables 10.3--10.4） | `logs/mhd/vprec_scan{1d,2d}/` | `scripts/run_vprec_scan1d.sh` |
 | Table 10.6/10.7(RAPTOR) | `logs/mhd/raptor_scan/*.txt` | `run_raptor_2d_scan.sh` + 第 2 节命令 |
-| mixed 实测(10.5) | `logs/mhd/perf_baseline/mixed_rr.csv`、`raptor_scan/ot2d512_cmp_mixed_gpu.txt` | mixed 二进制 + compare_precision.py |
+| mixed 实测(10.5) | `logs/mhd/perf_baseline/mixed_rr.csv`、`logs/mhd/raptor_scan/ot2d512_cmp_mixed_gpu.txt` | mixed 二进制 + compare_precision.py |
 | KH 三联图 | `results/mhd/gpu/kh/*.dat`、`logs/mhd/kh/` | 第 2 节 KH 命令 ×2 精度 → `analysis/mhd/plot_kh_triptych.py` |
 
 Mapping from tables/figures to source data files and generation scripts. See the table above for the exact file paths and commands.
