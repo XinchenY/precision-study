@@ -75,5 +75,5 @@ python3 analysis/euler/mca_analysis.py --prec fp64    # 有效位数分析
 - 状态更新:MHD 已含 GPU 后端(`src/mhd/*.cu`,含 mixed-precision 与 KH 版)、
   RAPTOR/VPREC 精度实验、完整计时协议。
 - **复现手册:`docs/REPRODUCING.md`**(编译矩阵、运行约定、表格→数据映射、门禁纪律)。
-- 中央台账:`logs/mhd/ch10_runs.csv`;大数据不入库,md5 清单 `data/MANIFEST.md5`
-  (`scripts/make_manifest.sh` 生成)。
+- 中央台账：`logs/mhd/ch10_runs.csv`；大体量原始结果不入库， 可按 `docs/REPRODUCING.md` 中的命令重新生成。
+
