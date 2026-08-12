@@ -1,79 +1,113 @@
-# 可压缩流体求解器 — 浮点数值精度研究
+# Compressible-Flow Solvers & Floating-Point Precision Study
+# 可压缩流体求解器与浮点精度研究
 
-单一代码库，统一框架，**按"关注点 × 物理模块"两层组织**：每个 `include/ src/ analysis/ results/`
-下再分 `euler/`（已完成）与 `mhd/`（进行中）。研究浮点运算在不同精度/硬件/编译器下对解的
-可靠性影响，用 Verificarlo Monte-Carlo Arithmetic (MCA) 量化有效十进制位数 `s_d = -log₁₀|σ/μ|`。
+**English** | [中文说明见下半部分](#中文说明)
 
-## 目录结构
+---
+
+## Overview
+
+This repository contains the complete code base of an MPhil project studying
+**how floating-point precision affects finite-volume solvers for compressible
+flow**. It provides:
+
+- **Solvers.** 1D/2D Euler (HLL/HLLC) and 1D/2D ideal MHD with mixed
+  GLM divergence control (HLL/HLLD, MUSCL–Hancock), written once as
+  header-only numerical kernels and compiled for both **CPU (g++)** and
+  **GPU (CUDA)** from the same source, so the two backends are bit-comparable.
+- **Precision instrumentation.**
+  - *Global*: FP64 vs FP32 builds (one `-DUSE_FLOAT` switch), and
+    Verificarlo **MCA/VPREC** bit-width scans (how many mantissa bits are
+    enough?).
+  - *Per-stage*: **RAPTOR** experiments that lower the arithmetic of one
+    solver stage at a time (recovery / CFL / reconstruction / flux / update
+    / GLM) to binary32, identifying which stages tolerate FP32;
+    a **CUDA mixed-precision solver** then realises the proposed allocation
+    in hardware.
+  - *Compiler-level*: `-O3`, `-Ofast`, `-fmad=false`, `--use_fast_math`
+    accuracy and runtime controls.
+- **Nonlinear robustness tests.** Orszag–Tang vortex, Brio–Wu and Sod shock
+  tubes, and a Kelvin–Helmholtz test with a deterministic single-mode
+  perturbation for a fair FP32-vs-FP64 comparison deep into the nonlinear
+  regime.
+- **A measurement discipline.** Bitwise regression gates for every code
+  change, interleaved timing batteries with pre-registered acceptance
+  criteria for shared-node benchmarking, and a provenance ledger
+  (`logs/mhd/ch10_runs.csv`) from which **every number in the write-up can be
+  traced back to a command**.
+
+## Repository layout
 
 ```
-include/
-  base.hpp                                                   共享样板: Real 类型 + HD 宏
-  euler/   config.hpp euler_common.hpp riemann.hpp          Euler 数值内核
-  mhd/     mhd_common.hpp mhd_glm_common.hpp                 MHD 数值内核 (8 变量 + 磁场)
-src/
-  euler/   riemann1d/euler2d/riemann2d × {cpu.cpp, gpu.cu}   6 个主程序
-  mhd/     mhd1d_cpu.cpp mhd2d_cpu.cpp mhd2d_glm_cpu.cpp      MHD 主程序 (目前仅 CPU)
-analysis/
-  euler/   *.py + fp32/ fp64/ figures/                       分析脚本与图
-  mhd/     plot_brio_wu.py plot_orszag_tang*.py              MHD 画图 (命令行参数式)
-results/
-  euler/   mca/ ieee/ gpu/ 2d/ compiler/                     Euler 结果
-  mhd/     brio_wu/ orszag_tang/                             MHD 结果 (OUTDIR 默认落此)
-logs/
-  euler/   fp32/ fp64/ compiler/ branch_sensitivity/         Euler 运行日志
-  mhd/     brio_wu_*.log                                     MHD 运行日志 (stdout 重定向)
-*.sh                                                          实验脚本（从项目根运行）
-archive/   euler_audit_table57.tar.gz                        Table 5.7 复现审计快照
+include/   header-only numerical kernels (euler/, mhd/), shared Real/HD macros
+src/       main programs: {euler,mhd} × {CPU .cpp, GPU .cu},
+           *_raptor.cpp (stage-level precision), mhd2d_glm_gpu_mixed.cu
+analysis/  Python plotting & comparison tools (compare_precision.py, figures/)
+scripts/   experiment batteries, watchers, manifest generator
+logs/      run logs, timing CSVs, comparison tables, provenance ledger
+docs/      REPRODUCING.md — build matrix, run conventions, table→data map
+*.sh       top-level experiment drivers (run from repository root)
 ```
 
-## 统一框架约定（Euler 与 MHD 通用）
+Raw simulation output (`results/`, ~1.5 GB) and compiled binaries (`bin/`)
+are **not** tracked; `docs/REPRODUCING.md` gives the exact commands to
+regenerate them and the md5 manifest to verify bitwise agreement.
 
-- **单一数值内核，CPU/GPU 共用**：头文件放 `include/<module>/`，全部标 `__host__ __device__`（`HD` 宏），
-  `.cpp`(g++) 与 `.cu`(nvcc) 编译同一份源码，保证算法逐位一致。
-- **头文件引用**：编译带 `-I include`，源码写 `#include "euler/riemann.hpp"` / `"mhd/mhd_common.hpp"`（与源码所在深度无关）。
-- **精度开关**：`-DUSE_FLOAT` 一键切 `typedef Real`（double ↔ float）。
-- **输出重定向**：源码读 `OUTDIR` 环境变量（默认落到 `results/<module>/...`），脚本无需改源码即可分流。
-- **共享样板 `include/base.hpp`**：只含 `Real` 类型 + `HD` 宏，Euler 与 MHD 都可 `#include "base.hpp"`。
-  MHD 头文件用它拿 Real/HD，**不** `#include` Euler 专属的 `config.hpp`（那里还有 GAMMA/NX/domain
-  等 shock-bubble 物理宏，MHD 不需要；MHD 物理参数自带，如 `MHD_GAMMA`、运行时 `nx/ghost`）。
-
-## 实验脚本（Euler，从项目根运行）
-
-| 脚本 | 内容 |
-|------|------|
-| `sanity_check.sh`        | Verificarlo 工具链验证（IEEE 后端 L∞ 阈值） |
-| `run_gpu.sh`             | GPU 1D 全测试（Toro 1–5 × HLLC/HLL × FP64/FP32） |
-| `fp32_backend.sh`        | CPU/GPU × FP64/FP32 的 2×2 矩阵（1D + 2D） |
-| `compiler_experiment.sh` | 编译器敏感性：O2/O3/Ofast × nvcc default/fastmath |
-| `branch_sensitivity.sh`  | MCA `--inst-fcmp`（浮点比较也受扰动） |
-
-分析入口：`python3 analysis/euler/mca_analysis.py --prec fp64`（或 `fp32`）。
-
-## results/euler/ 里有什么
-
-| 子目录 | 内容 |
-|--------|------|
-| `results/euler/mca/{fp32,fp64}/test{1-5}/{hllc,hll}/sample_*.dat` | **600 个 MCA 采样**（核心数据，重跑昂贵） |
-| `results/euler/ieee/{fp32,fp64}/`      | CPU IEEE 基准解 (1D) |
-| `results/euler/gpu/{fp32,fp64}/`       | GPU 解 (1D) |
-| `results/euler/2d/{fp32,fp64}/`        | 2D 解（激波-气泡 + Riemann） |
-| `results/euler/compiler/fp64/<build>/` | 编译器敏感性结果（5 builds × 3 cases） |
-
-## 快速复现（Euler）
+## Quick start
 
 ```bash
-bash sanity_check.sh --prec fp64                      # 验证工具链（已测通过）
-bash run_gpu.sh                                       # 重建并跑 GPU 1D
-python3 analysis/euler/mca_analysis.py --prec fp64    # 有效位数分析
+# CPU, FP64 (baseline -O2; add -DUSE_FLOAT for FP32; swap -O2 for -O3/-Ofast)
+g++ -O2 -std=c++14 -I include -DMHD_HLLD_TOLERANCE_VALUE=1.0e-4 \
+    src/mhd/mhd2d_glm_cpu.cpp -o bin/mhd2d_fp64
+
+# GPU (requires sm_80-class device, e.g. NVIDIA A30)
+nvcc -O2 -std=c++14 -arch=sm_80 -I include -DMHD_HLLD_TOLERANCE_VALUE=1.0e-4 \
+    src/mhd/mhd2d_glm_gpu.cu -o bin/mhd2d_glm_gpu_fp64
+
+# Orszag-Tang, 512², t=0.5           # Kelvin-Helmholtz, t=5
+./bin/mhd2d_glm_gpu_fp64 512 512 0.5 0.25 muscl hlld 0.18
+./bin/mhd2d_glm_gpu_fp64 512 512 5.0 0.25 muscl hlld 0.18 kh
+
+# Compare two runs variable-by-variable (relative L2)
+python3 analysis/mhd/compare_precision.py fp64.dat fp32.dat
 ```
 
-> 二进制统一输出到项目根的 `bin/`（构建脚本自动创建，已在 .gitignore 语义上视为可再生产物）。
+Full build matrix (RAPTOR, VPREC, compiler variants) and the
+table-by-table reproduction map: **[docs/REPRODUCING.md](docs/REPRODUCING.md)**.
 
-## 提交/复现指引 (2026-08 更新)
+## Requirements
 
-- 状态更新:MHD 已含 GPU 后端(`src/mhd/*.cu`,含 mixed-precision 与 KH 版)、
-  RAPTOR/VPREC 精度实验、完整计时协议。
-- **复现手册:`docs/REPRODUCING.md`**(编译矩阵、运行约定、表格→数据映射、门禁纪律)。
-- 中央台账:`logs/mhd/ch10_runs.csv`;大数据不入库,md5 清单 `data/MANIFEST.md5`
-  (`scripts/make_manifest.sh` 生成)。
+- g++ ≥ 9 (C++14), CUDA toolkit with `sm_80` support, Python 3 + NumPy +
+  Matplotlib.
+- Optional, for the precision-emulation experiments only:
+  [Verificarlo](https://github.com/verificarlo/verificarlo) 2.4.0 (VPREC/MCA)
+  and [RAPTOR](https://github.com/RIKEN-RCCS/RAPTOR) with clang 20.
+
+---
+
+## 中文说明
+
+本仓库是一个 MPhil 项目的完整代码:研究**浮点精度对可压缩流体有限体积求解器
+的影响**。
+
+- **求解器**:1D/2D Euler(HLL/HLLC)与 1D/2D 理想 MHD + mixed GLM 散度控制
+  (HLL/HLLD,MUSCL–Hancock)。数值内核只写一份(header-only),CPU(g++)与
+  GPU(CUDA)编译同一份源码,两个后端可逐位对比。
+- **精度实验三层**:
+  - *全局*:FP64/FP32 双构建(`-DUSE_FLOAT` 一键切换)+ Verificarlo
+    **MCA/VPREC** 位宽扫描(多少位尾数才够?);
+  - *按阶段*:**RAPTOR** 每次只把一个求解阶段(守恒量恢复/CFL/重构/通量/更新/
+    GLM)的运算降到 binary32,找出哪些阶段能容忍 FP32;再用
+    **CUDA mixed-precision 求解器**把该分配真实现到硬件上验证;
+  - *编译器级*:`-O3`/`-Ofast`/`-fmad=false`/`--use_fast_math`
+    的精度与运行时对照。
+- **非线性稳健性**:Orszag–Tang 涡、Brio–Wu/Sod 激波管、以及带确定性单模扰动的
+  Kelvin–Helmholtz 测试(FP32 与 FP64 逐位同扰动,公平对比深入非线性阶段)。
+- **测量纪律**:每次改码过逐位回归门禁;共享节点计时用轮转交错电池 +
+  预登记验收判据;中央台账 `logs/mhd/ch10_runs.csv` 让**正文每个数字都能反查到
+  命令级**。
+
+目录结构、编译矩阵、"表格→数据→脚本"映射见
+**[docs/REPRODUCING.md](docs/REPRODUCING.md)**。
+原始数据(`results/`,约 1.5 GB)与二进制(`bin/`)不入库,按手册命令可重生成,
+并用 md5 清单验证逐位一致。
