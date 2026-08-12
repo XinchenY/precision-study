@@ -1,7 +1,7 @@
 # 可压缩流体求解器 — 浮点数值精度研究
 
 单一代码库，统一框架，**按"关注点 × 物理模块"两层组织**：每个 `include/ src/ analysis/ results/`
-下再分 `euler/`（已完成）与 `mhd/`（进行中）。研究浮点运算在不同精度/硬件/编译器下对解的
+下再分 `euler/`（已完成）与 `mhd/`（已完成）。研究浮点运算在不同精度/硬件/编译器下对解的
 可靠性影响，用 Verificarlo Monte-Carlo Arithmetic (MCA) 量化有效十进制位数 `s_d = -log₁₀|σ/μ|`。
 
 ## 目录结构
@@ -13,7 +13,7 @@ include/
   mhd/     mhd_common.hpp mhd_glm_common.hpp                 MHD 数值内核 (8 变量 + 磁场)
 src/
   euler/   riemann1d/euler2d/riemann2d × {cpu.cpp, gpu.cu}   6 个主程序
-  mhd/     mhd1d_cpu.cpp mhd2d_cpu.cpp mhd2d_glm_cpu.cpp      MHD 主程序 (目前仅 CPU)
+  mhd/     mhd1d_cpu.cpp mhd2d_cpu.cpp mhd2d_glm_cpu.cpp      MHD 主程序 (已完成)
 analysis/
   euler/   *.py + fp32/ fp64/ figures/                       分析脚本与图
   mhd/     plot_brio_wu.py plot_orszag_tang*.py              MHD 画图 (命令行参数式)
