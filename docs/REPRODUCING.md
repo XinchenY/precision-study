@@ -6,12 +6,15 @@ original command*. Section 1 gives the full build matrix (all compile
 commands are shown verbatim and are language-neutral), Section 2 the run
 conventions, Section 3 the table-by-table data map, and Section 4 the bitwise
 regression gates that every code change must pass. Raw data (`results/`,
-~1.5 GB) is not tracked; regenerate it with the commands below and verify
-bitwise agreement against the md5 manifest (`scripts/make_manifest.sh`).
+~1.5 GB) is not tracked; regenerate it with the commands below. To verify
+bitwise agreement against an existing data archive, run
+`scripts/make_manifest.sh` on that archive and diff the two manifests
+(the manifest itself is generated locally and is not shipped in this
+repository).
 
 **中文** — 所有正文数字都能沿「表格 → 台账 → CSV/cmp 文件 → 原始命令」反查。
 中央台账:`logs/mhd/ch10_runs.csv`(每次运行的时间、命令、输出 md5、接受/拒绝原因)。
-`results/` 不入库(1.5 GB):关键 `.dat` 的 md5 见 `data/MANIFEST.md5`
+`results/` 不入库(1.5 GB):关键 `.dat` 的 md5 清单由 `scripts/make_manifest.sh` 本地生成(不随仓库分发)
 (由 `scripts/make_manifest.sh` 生成),按下述命令重生成后比对 md5 即可验证逐位一致。
 
 ## 1. 编译矩阵
