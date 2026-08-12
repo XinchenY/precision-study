@@ -77,3 +77,4 @@ python3 analysis/euler/mca_analysis.py --prec fp64    # 有效位数分析
 - **复现手册:`docs/REPRODUCING.md`**(编译矩阵、运行约定、表格→数据映射、门禁纪律)。
 - 中央台账：`logs/mhd/ch10_runs.csv`；大体量原始结果不入库， 可按 `docs/REPRODUCING.md` 中的命令重新生成。
 
+- Central ledger: `logs/mhd/ch10_runs.csv`; large raw result files are not committed — they can be regenerated using the commands in `docs/REPRODUCING.md`.
